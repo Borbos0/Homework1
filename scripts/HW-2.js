@@ -4,10 +4,10 @@ alert(a);
 a += 10;
 alert(a);
 // Задание 2
-let IPhone = 'Год выпуска первого iPhone 2007';
+const IPhone = 'Год выпуска первого iPhone 2007';
 alert(IPhone);
 // Задание 3
-let author = 'Создатель языка JavaScript - Брендан Эйх или Айк';
+const author = 'Создатель языка JavaScript - Брендан Эйх или Айк';
 alert(author);
 // Задание 4
 let firstNumber = 10;
@@ -22,32 +22,35 @@ result = firstNumber / secondNumber;
 alert(`Частное ${firstNumber} и ${secondNumber} = ${result}`);
 // Задание 5
 let numberFive = 5;
-result = secondNumber ** numberFive;
-alert(`${secondNumber} в степени ${numberFive} = ${result}`);
+let secondNumber1 = 2;
+let result1;
+result1 = secondNumber ** numberFive;
+alert(`${secondNumber1} в степени ${numberFive} = ${result1}`);
 // Задание 6
 let numberNine = 9;
-result = numberNine % secondNumber;
-alert(`Остаток от денения - ${result}`);
+let result2;
+result2 = numberNine % secondNumber;
+alert(`Остаток от денения - ${result2}`);
 // Задание 7
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
 alert(num);
 // Задание 8
 let age = Number(prompt("Сколько вам лет?"));
 alert(`Вам ${age} лет`);
 // Задание 9.0
-const user = {
+let user = {
     name: 'Шарик',
     age: 8,
     isAdmin: true
 };
 // Задание 9.1
-user.cityOfResidence = 'Санкт-Петербург';
+user["cityOfResidence"] = 'Санкт-Петербург';
 // Задание 9.2
 user.age = 6;
 // Задание 9.3
@@ -56,5 +59,5 @@ delete user.cityOfResidence;
 let info = prompt("Какую информацию хотите узнать о пользователе?");
 console.log(user[info]);
 // Задание 10
-info = prompt("Как вас зовут?");
-alert(`Привет, ${info}!`);
+let info1 = prompt("Как вас зовут?");
+alert(`Привет, ${info1}!`);
