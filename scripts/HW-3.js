@@ -69,10 +69,9 @@ else {
     alert("Число нечетное");
 }
 //Задание 8
-// (Я не понял как определять. Cкорее всего нужны доп библиотеки
-// если это не пользователь выбирает значение)
 let clientOS = navigator.clientOS;
 console.log(clientOS);
+console.log(window.navigator.userAgent);
 //Задание 9
 let clientDeviceYear;
 
