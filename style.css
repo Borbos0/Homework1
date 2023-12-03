@@ -127,6 +127,113 @@ body {
 .years__month__img {
     padding-left: 131px;
 }
+.words {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 475px;
+    padding-bottom: 240px;
+}
+.words__month {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 584px;
+}
+.words__month__top {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+.words__month__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+.words__month__link {
+    border-radius: 30px;
+    background: #9C0332;
+    min-width: 234px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 234px;
+    min-height: 49px;
+    text-align: center;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 13px;
+}
+.words__month__img {
+    padding-right: 135px;
+}
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 275px;
+    background-image: url(img/puzzleGame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 800px;
+}
+.puzzle__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+}
+.puzzle__block__top {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+.puzzle__block__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+.puzzle__block__link {
+    border-radius: 30px;
+    background: #9C0332;
+    min-width: 234px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 234px;
+    min-height: 49px;
+    text-align: center;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 13px;
+}
+.copyright {
+    display: flex;
+    justify-content: space-around;
+}
+.copyright__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
 @media (max-width: 767px) {
     .container {
         padding-left: 16px;
@@ -173,6 +280,49 @@ body {
         /*max-width: 343px;*/
     }
     .years__month__link {
-        margin-left: 71px;
+        margin-left: 55px;
+    }
+    .years__month__img {
+        padding-left: 0;
+        padding-top: 64px;
+    }
+    .words__month__top {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .words__month__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+    }
+    .words__month__link {
+        margin-left: 55px;
+    }
+    .words__month__img {
+        padding-right: 0;
+        padding-bottom: 64px;
+    }
+    .puzzle__block__top {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .puzzle__block__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
     }
 }
