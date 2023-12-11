@@ -11,18 +11,21 @@ numbers2.forEach((element, index) => {
         console.log(`Индекс числа 4 = ${index}`);
     }
 });
+// Альтернативное решение
+console.log(`Индекс числа 4 = ${numbers2.indexOf(4)}`);
 // Задание 3
 let numbers3 = [1, 3, 5, 10, 20];
 numbers3 = numbers3.join(' ');
 console.log(numbers3);
-// Задание 4
+// Задание 4 
 const numbers4 = [];
+const one = 1;
+const innerArray = [];
+for (let j = 0; j < 3; j++) {
+    innerArray.push(one);
+}
 for (let i = 0; i < 3; i++) {
-    numbers4[i] = [];
-
-    for (let j = 0; j < 3; j++) {
-        numbers4[i].push(j + 1);
-    }
+    numbers4.push(innerArray);
 }
 console.log(numbers4);
 // Задание 5
@@ -35,6 +38,9 @@ console.log(numbers5);
 const numbers6 = [9, 8, 7, 'a', 6, 5];
 numbers6.splice(3, 1);
 console.log(numbers6.sort());
+// Альтернативное решение
+const numbers6Alt = [9, 8, 7, 'a', 6, 5];
+console.log(numbers6Alt.filter((word) => Number(word)));
 // Задание 7
 const numbers7 = [9, 8, 7, 6, 5];
 let answer = Number(prompt('Угадай число?'));
@@ -49,12 +55,21 @@ if (correctAnswer == true) {
 } else {
     alert('Не угадал');
 }
+// Альтернативное решение
+if (numbers7.includes(answer)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
 // Задание 8
 let word = 'abcdef';
 word = word.split('');
 word = word.reverse();
 word = word.join('');
 console.log(word);
+// Альтернативное решение
+let wordAlt = 'abcdef';
+console.log(wordAlt.split('').reverse().join(''));
 // Задание 9
 let numbers9 = [[1, 2, 3], [4, 5, 6]];
 let secondPart = numbers9.pop();
@@ -63,6 +78,9 @@ numbers9 = numbers9.join(',');
 numbers9 = numbers9.concat(`,${secondPart}`);
 numbers9 = numbers9.split(',');
 console.log(numbers9);
+// Альтернативное решение
+let numbers9Alt = [[1, 2, 3], [4, 5, 6]];
+console.log(numbers9Alt.flat());
 // Задание 10
 const numbers10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let n = 1;
