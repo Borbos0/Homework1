@@ -3,11 +3,12 @@ const js = 'js';
 console.log(js.toUpperCase());
 // Задание 2
 function newMassive(mas, str) {
-    mas.forEach(el => {
-        if (el.toLowerCase().includes(str.toLowerCase())) {
-            console.log(el);
-        }
-    });
+    // mas.forEach(el => {
+    //     if (el.toLowerCase().includes(str.toLowerCase())) {
+    //         console.log(el);
+    //     }
+    // });
+    console.log(mas.filter((mas) => mas.toLowerCase().startsWith(str))); // Переделал что бы работало только для начала слов
 }
 newMassive(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
 newMassive(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
@@ -19,8 +20,11 @@ console.log(Math.ceil(num));
 console.log(Math.round(num));
 // Задание 4
 function maxMinNumbers(mas) {
-    const minValue = Math.min.apply(null, mas);
-    const maxValue = Math.max.apply(null, mas);
+    // const minValue = Math.min.apply(null, mas);
+    // const maxValue = Math.max.apply(null, mas);
+    // Переделал
+    const minValue = Math.min(...mas);
+    const maxValue = Math.max(...mas);
     console.log(`Минимальное число массива ${minValue}`);
     console.log(`Максимальное число массива ${maxValue}`);
 }
@@ -45,6 +49,9 @@ randomNum(7, 23); // Функция из задания 5
 // Задание 8
 const data1 = new Date("4/25/2003");
 console.log(data1);
+// Альтернативное решение (нужно было текущую)
+const data2 = new Date();
+console.log(data2);
 // Задание 9
 function DateAfter73(Dat) {
     if (Dat === undefined) {
@@ -62,7 +69,7 @@ DateAfter73(); // Текущая дата
 // Задание 10
 function dat(Dat) {
     const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
-    const months = ["Января", "Февраля", "Марта", "Апреля", "Майя", "Июня",
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
         "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
     if (Dat === undefined || Dat === NaN || Dat === null) {
         rusDat = new Date();

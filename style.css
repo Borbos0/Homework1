@@ -4,9 +4,6 @@
     font-family: Montserrat;
     box-sizing: border-box;
 }
-body {
-    
-}
 .center {
     /*margin: 0 auto;*/
     padding-left: calc(50% - 600px);
@@ -272,6 +269,15 @@ body {
     .small {
         display: block;
     }
+    .games {
+        justify-content: center;
+    }
+    .games__block {
+        align-items: center;
+    }
+    .years__month {
+        align-items: center;
+    }
     .years__month__top {
         color: #FFF;
         text-align: center;
@@ -291,17 +297,17 @@ body {
         padding-right: 16px;
         /*max-width: 343px;*/
     }
-    .years__month__link {
-        margin-left: 68px;
-    }
     .years__month__img {
-        padding-left: 0;
+        padding-left: 32px;
         padding-top: 64px;
     }
     .words {
         padding-top: 136px;
         flex-direction: column-reverse;
         padding-bottom: 142px;
+    }
+    .words__month {
+        align-items: center;
     }
     .words__month__top {
         color: #FFF;
@@ -320,9 +326,6 @@ body {
         font-weight: 300;
         padding-left: 16px;
         padding-right: 16px;
-    }
-    .words__month__link {
-        margin-left: 68px;
     }
     .words__month__img {
         padding-right: 0;
